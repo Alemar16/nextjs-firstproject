@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
+import Link  from "next/link";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "My First Next App",
@@ -16,13 +14,13 @@ export default function RootLayout({ children }) {
         <h1>Navigation</h1>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <a href="/services">services </a>
+            <Link href="/services">services </Link>
           </li>
         </ul>
         {children}
