@@ -1,4 +1,5 @@
-import Link  from "next/link";
+//import with absolute rute using "@/"
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 export const metadata = {
@@ -12,17 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <h1>Navigation</h1>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/services">services </Link>
-          </li>
-        </ul>
+       <Navigation />
         {children}
       </body>
     </html>
